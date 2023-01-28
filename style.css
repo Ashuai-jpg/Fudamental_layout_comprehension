@@ -53,44 +53,50 @@ nav a {
 
 /* appended code below */
 
-/* nav layout */
-nav {
-    position: sticky;
-    top: 0;
-}
+/* RWD */
 
-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+@media screen and (min-width: 40rem) {
 
+    /* nav layout */
 
-/* grid layout */
+    nav {
+        position: sticky;
+        top: 0;
+    }
 
-.grid {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-
-.photos {
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
-    display: grid;
-    gap: 1px;
-    grid-template-columns: 1fr 1fr;
-
-}
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
 
-/* float layout */
+    /* grid layout */
 
-article>img {
-    float: left;
-    margin-right: 10px;
+    .grid {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
 
-    margin-bottom: 10px;
-    /* give some space to breathe */
+    .photos {
+        list-style: none;
+        margin: 0%;
+        padding: 0%;
+        display: grid;
+        gap: 1px;
+        grid-template-columns: 1fr 1fr;
 
+    }
+
+
+    /* float layout */
+
+    article>img {
+        float: left;
+        margin-right: 10px;
+
+        margin-bottom: 10px;
+        /* give some space to breathe */
+
+    }
 }
